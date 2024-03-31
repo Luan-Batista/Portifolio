@@ -56,6 +56,7 @@ body,html{
     width: 120px;
     background-color: #647bff;
     height:40px;
+    font-weight: bold;
 }
 
 .bt-contrato:hover{
@@ -183,14 +184,7 @@ body,html{
 
 .projeto.newsletter{
     background-image: url('../assets/projetoNewsLetter.png');
-    background-position: center;
     background-size: contain;
-}
-
-.projeto.AgenciaXpto{
-    background-image: url(../assets/Xpto.png);
-    background-size: cover;
-    background-position: center;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -229,40 +223,14 @@ body,html{
     height: 50px;
     border-radius: 0.5rem;
     background-color: #10121c;
-    box-shadow: none;
 }
 
 .button-enviar:hover{
-opacity: 0.8;
+    box-shadow: none;
+    background-color:#202436;
 }
 
 
 
-.rodape{
-    width: 100%;
-    height: 100px;
-}
-
-.rodape .padding{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    padding: 20px;
-}
-
-.rodape .redes-sociais{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 10px;
-    font-size: 30px;
-    border-radius: 50%;
-    padding: 15px;
-    width: 50px;
-    transition: 0.3s ease-in-out;
-}
 
 
-.navegacao-rodape{
-    display: flex;
-}
