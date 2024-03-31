@@ -4,39 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu portifólio</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="/src/main/resources/static/resources/styles/style.css">
     <link rel="shortcut icon" href="assets/faviconio-logo/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <!-- header -->
     <header class="cabecalho">
         <a href="#"><h1 class="logo">LB.dev</h1></a>
+        <!-- <span class="material-symbols-outlined">menu</span> -->
         <nav class="menu">
             <a href="#sobre-mim"><li>Sobre mim</li></a>
             <a href="#projetos"><li>Meus projetos</li></a>
-            <a href="#contatos"><li>Contatos</li></a>
         </nav>
-        <a href="#" class="bt-contrato"><li>Me contrate</li></a>
+        <a href="#contatos" class="bt-contrato"><li>Me contrate</li></a>
+
     </header>
     <!-- seção principal -->
     <section class="informacoes-pessoais">
+        <span class="espaco"></span>
         <div class="pai">
             <div class="quem-eu-sou">
             
-                <h1 class="nome">I,M <br> Luan Batista</h1>
+                <h1 class="nome">Sou <br> Luan Batista</h1>
                 <span class="border"></span>
-                <p>full stack developer in constant evolution</p>
+                <p>Desenvolvedor full-stack em constante evolução
+                </p>
                 <div class="bt-curriculo"><a href="#">Donwload CV</a></div>
             </div>
             <div class="imagem-profile">
-                <img src="assets/cmp-removebg-preview.png" alt="imagem do criador do site">
+                <img src="/src/main/resources/static/resources/assets/cmp-removebg-preview.png" alt="imagem de um computador">
             </div>
         </div>
     </section>
     <!-- seção sobre mim-->
+
     <span id="sobre-mim"></span>
     <section class="sobre-mim">
-        <span class="espaco"></span>
+        
         <h2 class="titulo-sobre-mim">Sobre mim</h2>
             <p class="texto-sobre-mim">
                 <span class="tab"></span>Como desenvolvedor full-stack com experiência atual em programação utilizando a linguagem Java,
@@ -64,7 +71,7 @@
         <div class="painel-projeto">
             <div class="projeto mario"><a href="https://github.com/Luan-Batista/ProjetoMario" target="_blank"></a></div>
             <div class="projeto newsletter"><a href="https://github.com/Luan-Batista/frontend-mentor" target="_blank"></a></div>
-            <div class="projeto"><a href="#"></a></div>
+            <div class="projeto AgenciaXpto"><a href="https://github.com/Luan-Batista/AgenciaXpto"></a></div>
         </div>
     </section>
 
@@ -72,25 +79,45 @@
     <!-- seção contatos -->
     <section class="secao-contatos">
 
-        <div class="formulario">
-            <div class="h2-contatos">
-                <h2>Entre em contato!</h2>
+        <div class="fale-comigo">
+            <div class="formulario">
+                <div class="h2-contatos">
+                    <h2>Entre em contato!</h2>
+                </div>
+                <label for="">
+                    <span>Nome</span><br>
+                    <input class="input" type="text" name="nome" id="contratante" placeholder="informe seu nome" >
+                </label>
+                <label for="">
+                    <span>Email</span><br>
+                    <input class="input" type="email" placeholder="qual o seu email?" name="email" id="email">
+                </label>
+                <label for="">
+                    <span>Sua mensagem</span><br>
+                    <textarea name="mensagem" id="" cols="23" rows="10"></textarea>
+                </label>
+                <label for=""><input type="submit" placeholder="enviar" class="button-enviar"></label>
             </div>
-            <label for="">
-                <span>Nome</span><br>
-                <input class="input" type="text" name="nome" id="contratante" placeholder="informe seu nome" >
-            </label>
-            <label for="">
-                <span>Email</span><br>
-                <input class="input" type="email" placeholder="qual o seu email?" name="email" id="email">
-            </label>
-            <label for="">
-                <span>Sua mensagem</span><br>
-                <textarea name="mensagem" id="" cols="23" rows="10"></textarea>
-            </label>
-            <label for=""><input type="submit" placeholder="enviar" class="button-enviar"></label>
+
+            <div class="Contatos">
+                <h2>Você também pode me encontrar nas seguintes redes:</h2>
+                <nav class="navegacao">
+                    <a href="https://github.com/Luan-Batista" target="_blank" class="redes-sociais">
+                        <i class="fab fa-github"></i>
+                        <h3>Github</h3>
+                    </a>
+                    <a href="https://www.linkedin.com/in/luan-batista-66bb8a21b/" target="_blank" class="redes-sociais">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>Linkedin</h3>
+                    </a>
+                </nav>
+
+            </div>
         </div>
+
     </section>
+
+          
 </body>
 
 
